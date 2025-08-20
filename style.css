@@ -37,3 +37,9 @@ p {
     font-weight: bold;
     color: #333;
 }
+
+#almoco_sugestao {
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+}

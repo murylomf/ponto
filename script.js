@@ -21,7 +21,10 @@ function calcularSaida() {
         let horaSaida = Math.floor(minutosTotais / 60);
         let minutoSaida = minutosTotais % 60;
 
+        let horaSugestaoAlmoco  = horaEntrada + Math.floor(horasTrabalho / 2);
+
         document.getElementById("saida").textContent = `Horário de saída: ${horaSaida.toString().padStart(2, '0')}:${minutoSaida.toString().padStart(2, '0')}`;
+        document.getElementById("almoco_sugestao").textContent = `Sugestão de horário de almoço: ${horaSugestaoAlmoco.toString().padStart(2, '0')}:${minutoEntrada.toString().padStart(2, '0')}`;
     } else {
         document.getElementById("saida").textContent = "Por favor, insira valores válidos.";
     }
